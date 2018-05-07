@@ -1,5 +1,6 @@
 body{
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 
 header{
@@ -8,12 +9,9 @@ header{
 
 footer{
   margin-top: 50px;
-  padding: 20px 20px;
+  padding: 20px 20px 0 20px;
   background-color: #252a30;
-  position: relative;
   width: 100%;
-  left: 0;
-  bottom: 0;
 }
 
 footer a{
@@ -44,6 +42,9 @@ footer a:hover{
   margin-bottom: 50px;
   border-bottom: 1px solid rgba(0,0,0,.1);
   padding-bottom: 50px;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
 }
 
 .rp-image {
@@ -74,4 +75,50 @@ footer a:hover{
   position: relative;
   top: 30px;
   right: 30px;
+}
+
+.particles-js-canvas-el{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header{
+  position: relative;
+  z-index: 10;
+}
+
+.wrapper{
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.post-image{
+  background-image:url('./images/image.png');
+  max-width:  1110px;
+  height: 300px;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  padding-left: -30px;
+}
+
+.post-header{
+  margin-bottom: 30px;
+}
+
+.post-title{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.post-date{
+  color: #71818c;
+  font-size: 20px;
+}
+
+.post-content{
+  padding: 0 30px 30px 30px;
 }

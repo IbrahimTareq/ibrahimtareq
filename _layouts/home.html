@@ -2,64 +2,66 @@
 layout: default
 ---
 
-<section class="home">
-    <div class="row h-100">
-        <div class="col-sm-12 col-lg-6 align-self-center">
-            <div class="special cards">
-                <div class="ui fluid card landing-avatar">
-                    <div class="blurring dimmable image">
-                      <div class="ui dimmer">
-                        <div class="content">
-                          <div class="center">
-                            <a href={{ "/assets/resume.pdf" | relative_url }} class="ui inverted button" target="_blank">View CV</a>
+<div class="container" id="particles-js">
+  <section class="home">
+      <div class="row h-100">
+          <div class="col-sm-12 col-lg-6 align-self-center">
+              <div class="special cards">
+                  <div class="ui fluid card landing-avatar">
+                      <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                          <div class="content">
+                            <div class="center">
+                              <a href={{ "/assets/resume.pdf" | relative_url }} class="ui inverted button" target="_blank">View CV</a>
+                            </div>
                           </div>
                         </div>
+                        <img src={{ "/assets/images/profile.jpg" | relative_url }} alt="avatar">
                       </div>
-                      <img src={{ "/assets/images/profile.jpg" | relative_url }} alt="avatar">
-                    </div>
-                    <div class="content center aligned">
-                        <a class="header" href="#">Ibrahim Tareq</a>
-                        <div class="meta">
-                          <a>Developer Evangelist</a>
-                        </div>
-                        <div class="description">
-                            A gentleman endlessly striving for crafting ideas which are conceptually grounded and have been pushed, fine-tuned and sculpted to create engaging experiences with a high level of quality and detail.
-                        </div>
-                    </div>
-                    <div class="extra content center aligned">
-                        <a>
-                          <i class="meh icon"></i>
-                          1 Friend
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-lg-6 landing-title align-self-center">
-            <h1>
-                Designer. <br>
-                Coder. <br>
-                Maker. <br>
-            </h1>
-        </div>
-    </div>
-</section>
+                      <div class="content center aligned">
+                          <a class="header" href="#">Ibrahim Tareq</a>
+                          <div class="meta">
+                            <a>Developer Evangelist</a>
+                          </div>
+                          <div class="description">
+                              A gentleman endlessly striving for crafting ideas which are conceptually grounded and have been pushed, fine-tuned and sculpted to create engaging experiences with a high level of quality and detail.
+                          </div>
+                      </div>
+                      <div class="extra content center aligned">
+                          <a>
+                            <i class="meh icon"></i>
+                            1 Friend
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 landing-title align-self-center">
+              <h1>
+                  Designer. <br>
+                  Coder. <br>
+                  Maker. <br>
+              </h1>
+          </div>
+      </div>
+  </section>
 
-{%- if site.posts.size > 0 -%}
-<p class="text-center rp-heading">Latest Posts</p>
-{%- for post in site.posts -%}
-<section class="d-flex flex-row justify-content-between recent-posts">
-    <div class="rp-image">
-      <img src={{ "/assets/images/image.png" | relative_url }}>
-    </div>
-    <div class="rp-meta text-right">
-      <p class="rp-post-heading"><a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a></p>
-      {%- assign date_format = "%b %-d, %Y" -%}
-      <p>{{ post.date | date: date_format }}</p>
-      <p>Description</p>
-    </div>
-</section>
-{%- endfor -%}
-{%- endif -%}
+  {%- if site.posts.size > 0 -%}
+  <p class="text-center rp-heading">Recent Posts</p>
+  {% for post in site.posts limit:2 %}
+  <section class="d-flex flex-row justify-content-between recent-posts">
+      <div class="rp-image">
+        <img src={{ "/assets/images/image.png" | relative_url }}>
+      </div>
+      <div class="rp-meta text-right">
+        <p class="rp-post-heading"><a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a></p>
+        {%- assign date_format = "%b %-d, %Y" -%}
+        <p>{{ post.date | date: date_format }}</p>
+        <p>Description</p>
+      </div>
+  </section>
+  {%- endfor -%}
+  {%- endif -%}
+</div>
