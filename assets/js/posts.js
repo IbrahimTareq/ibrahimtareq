@@ -6,7 +6,6 @@ $(document).ready(function () {
   $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
     if (response.status == 'ok') {
       var output = '';
-      console.log(response);
       for (i=0; i<3; i++){
         var item = response.items[i];
         output += '<div class="blog-post">';

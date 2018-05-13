@@ -39,15 +39,15 @@ footer a:hover{
 }
 
 .home{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   height: 100vh;
   position: relative;
   z-index: 10;
 }
 
-.rp-image {
+/* .rp-image {
  width: 250px;
  overflow: hidden;
 }
@@ -63,10 +63,6 @@ footer a:hover{
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
-.rp-heading{
-  font-size: 4em;
-}
-
 .rp-post-heading{
   font-size: 2em;
 }
@@ -75,7 +71,7 @@ footer a:hover{
   position: relative;
   top: 30px;
   right: 30px;
-}
+} */
 
 .particles-js-canvas-el{
   position: absolute;
@@ -89,7 +85,7 @@ header{
   z-index: 10;
 }
 
-.wrapper{
+/* .wrapper{
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -120,6 +116,10 @@ header{
 
 .post-content{
   padding: 0 30px 30px 30px;
+} */
+
+.rp-heading{
+  font-size: 4em;
 }
 
 .blog-post{
@@ -157,4 +157,30 @@ header{
 .medium-link{
   text-align: right;
   margin-top: 10px;
+}
+
+.recent-posts{
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 30px;
+}
+
+.about-me{
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 30px;
+}
+
+.projects{
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 30px;
+}
+
+.typer-section{
+  font-size: 3em;
+}
+
+.about-me{
+  font-size: 1.25em;
 }
