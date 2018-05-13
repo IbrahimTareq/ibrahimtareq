@@ -1,7 +1,5 @@
 ---
-layout: default
+layout: allPosts
 title: Blog
 permalink: /blog/
 ---
-
-This is the blog page.

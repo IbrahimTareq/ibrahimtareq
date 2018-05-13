@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container" id="particles-js">
+<div id="particles-js">
   <section class="home">
       <div class="row h-100">
           <div class="col-sm-12 col-lg-6 align-self-center">
@@ -30,7 +30,7 @@ layout: default
                       <div class="extra content center aligned">
                           <a>
                             <i class="meh icon"></i>
-                            1 Friend
+                            0 Friend
                           </a>
                       </div>
                   </div>
@@ -45,23 +45,11 @@ layout: default
           </div>
       </div>
   </section>
-
-  {%- if site.posts.size > 0 -%}
-  <p class="text-center rp-heading">Recent Posts</p>
-  {% for post in site.posts limit:2 %}
-  <section class="d-flex flex-row justify-content-between recent-posts">
-      <div class="rp-image">
-        <img src={{ "/assets/images/image.png" | relative_url }}>
-      </div>
-      <div class="rp-meta text-right">
-        <p class="rp-post-heading"><a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a></p>
-        {%- assign date_format = "%b %-d, %Y" -%}
-        <p>{{ post.date | date: date_format }}</p>
-        <p>Description</p>
-      </div>
-  </section>
-  {%- endfor -%}
-  {%- endif -%}
 </div>
+
+<section>
+  <p class="text-center rp-heading">Recent Posts</p>
+  <div id="jsonContent" class="d-flex justify-content-between">
+  </div>
+  <p class="medium-link"><a href="https://medium.com/@ibrahimtareq">View all></a></p>
+</section>
