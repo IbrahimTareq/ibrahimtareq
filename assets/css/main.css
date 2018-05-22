@@ -3,12 +3,12 @@ body{
   font-size: 16px;
 }
 
-header{
+/* header{
   margin-bottom: 50px;
-}
+} */
 
 footer{
-  margin-top: 50px;
+  margin-top: 5%;
   padding: 20px 20px 0 20px;
   background-color: #252a30;
   width: 100%;
@@ -39,9 +39,9 @@ footer a:hover{
 }
 
 .home{
-  margin-bottom: 30px;
+  margin-bottom: 3%;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  padding-bottom: 30px;
+  padding-bottom: 3%;
   height: 100vh;
   position: relative;
   z-index: 10;
@@ -131,9 +131,9 @@ header{
   margin-right: 0;
 }
 
-.blog-element {
+/* .blog-element {
   width: 350px;
-}
+} */
 
 .blog-element img{
   width: 100%;
@@ -160,21 +160,21 @@ header{
 }
 
 .recent-posts{
-  margin-bottom: 30px;
+  margin-bottom: 3%;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  padding-bottom: 30px;
+  padding-bottom: 3%;
 }
 
 .about-me{
-  margin-bottom: 30px;
+  margin-bottom: 3%;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  padding-bottom: 30px;
+  padding-bottom: 3%;
 }
 
 .projects{
-  margin-bottom: 30px;
+  margin-bottom: 3%;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  padding-bottom: 30px;
+  padding-bottom: 3%;
 }
 
 .typer-section{
