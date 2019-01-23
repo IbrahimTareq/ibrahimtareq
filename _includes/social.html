@@ -1,4 +1,5 @@
-<div class="text-right">
+<div>
+  {%- if site.email_username -%}<a href="mailto:{{ site.email_username| cgi_escape | escape }}"><i class="fas fa-at"></i></a>{%- endif -%}
   {%- if site.instagram_username -%}<a href="https://instagram.com/{{ site.instagram_username| escape }}"><i class="fab fa-instagram"></i></a>{%- endif -%}
   {%- if site.github_username -%}<a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><i class="fab fa-github"></i></a>{%- endif -%}
   {%- if site.linkedin_username -%}<a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><i class="fab fa-linkedin-in"></i></a>{%- endif -%}

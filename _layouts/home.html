@@ -6,17 +6,12 @@ layout: default
   <section class="home">
       <div class="row h-100">
           <div class="col-sm-12 col-lg-6 align-self-center">
-              <div class="special cards">
                   <div class="ui fluid card landing-avatar">
-                      <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                          <div class="content">
-                            <div class="center">
-                              <a href={{ "/assets/resume.pdf" | relative_url }} class="ui inverted button" target="_blank">View CV</a>
-                            </div>
-                          </div>
-                        </div>
-                        <img src={{ "/assets/images/profile.jpg" | relative_url }} alt="avatar">
+                      <div class="ui slide masked reveal image">
+                        <img src={{ "/assets/images/profile.jpg" | relative_url }}  class="visible content">
+                        <img src={{ "/assets/images/profile_2.jpg" | relative_url }}  class="hidden content">
+                      </div>
+                      <div class="image">
                       </div>
                       <div class="content center aligned">
                           <a class="header" href="#">Ibrahim Tareq</a>
@@ -34,7 +29,6 @@ layout: default
                           </a>
                       </div>
                   </div>
-              </div>
           </div>
           <div class="col-sm-12 col-lg-6 landing-title align-self-center">
               <h1>
@@ -47,24 +41,33 @@ layout: default
   </section>
 </div>
 
+<section class="about-me">
+  <p>Hello! My name is Ibrahim and I am a developer evangelist for <a href="https://www.messagemedia.com.au/">MessageMedia</a>. I am drawn towards beautiful code and a minimalist approach. I believe there is beauty in simplicity. My journey began in the Middle East and continued to South Asia
+from where I decided to come to Australia. I have a background in Computer Science and continue to be inspired by my community here in Melbourne. I am a coder, an optimist, an explorer looking to take on the world one challenge at a time. </p>
+</section>
+
+<!--
 <section class="recent-posts" data-aos="fade-up" >
   <p class="text-center rp-heading">Recent Posts</p>
   <div id="jsonContent" class="d-flex justify-content-between"></div>
   <p class="medium-link"><a href="https://medium.com/@ibrahimtareq">View all></a></p>
 </section>
+-->
 
-<section class="about-me">
-  <p>Hello! My name is Ibrahim and I am a developer evangelist for <a href="https://www.messagemedia.com.au/">MessageMedia</a>. I am drawn towards beautiful code and a minimalist approach. I believe there is beauty in simplicity. I have a background in Computer Science and continue to be inspired by my community here in Melbourne. I have a soft spot for felines and you'll find me spending most of my weekends snuggling with my cat. I am a coder, an optimist, an explorer looking to take on the world one challenge at a time. </p>
-</section>
-
+<!--
 <section class="projects">
-  <p class="text-center rp-heading">Projects</p>
+  <p class="text-center rp-heading">Past conferences</p>
   <p></p>
 </section>
+-->
 
-<section class="text-center typer-section">
+<section class="work-history">
+  {%- include work.html -%}
+</section>
+
+<!-- <section class="text-center typer-section">
   <p>Ibrahim likes to
     <span class="typer" id="main" data-words="travel,cook,code,eat cookies" data-colors="#4183c4" data-delay="100" data-deleteDelay="1200"></span>
     <span class="cursor" data-owner="main"></span>
   </p>
-</section>
+</section> -->
