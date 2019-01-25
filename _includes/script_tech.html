@@ -176,7 +176,7 @@
   });
   simulation.nodes(nodes).on('tick', ticked);
 
-  svg.style('background-color', '#fff');
+  svg.style('background-color', '#AARRGGBB');
   let node = svg.selectAll('.node')
     .data(nodes)
     .enter().append('g')
@@ -240,7 +240,7 @@
     .attr('width', d => d.radius * 2 * 0.7)
 
   node.append('title')
-    .text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
+    .text(d => (d.name));
 
   let legendOrdinal = d3.legendColor()
     .scale(scaleColor)
@@ -279,7 +279,6 @@
   infoBox.append('p')
     .classed('circle-overlay__body', true)
     .html(d => d.desc);
-
 
   function ticked() {
     node

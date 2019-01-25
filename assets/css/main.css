@@ -198,6 +198,7 @@ header{
 }
 
 .work-history{
+  overflow-x: hidden;
   margin-bottom: 3%;
   border-bottom: 1px solid rgba(0,0,0,.1);
   padding-bottom: 3%;
@@ -553,14 +554,11 @@ circle{
 /* Work history CSS end */
 
 @media only screen and (max-width: 990px) {
-   .home {
-     margin-top: 3%;
-     height: auto;
+
+  .timeline{
+    margin-top: 35px;
   }
 
-  .landing-title h1 {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -568,8 +566,16 @@ circle{
     font-size: 5em;
   }
 
+  .about-me p{
+    padding: 2%;
+  }
+
   .typer-section{
     font-size: 2em;
+  }
+
+  #skills svg{
+    margin-top: 0;
   }
 
   .footer-title{
@@ -582,8 +588,28 @@ circle{
 }
 
 @media only screen and (max-width: 450px) {
+
+  .home {
+    margin: 5%;
+    height: auto;
+  }
+
   .typer-section{
     font-size: 1.5em;
+  }
+
+  .home h1 {
+    font-size: 4em;
+    margin: 5% 0;
+    text-align: center;
+  }
+
+  .about-me p{
+    padding: 5%;
+  }
+
+  #skills svg{
+    margin-top: -90px;
   }
 
   footer{
