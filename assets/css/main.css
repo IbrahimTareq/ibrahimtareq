@@ -3,6 +3,10 @@ body{
   font-size: 16px;
 }
 
+h2{
+  font-size: 3em;
+}
+
 /* header{
   margin-bottom: 50px;
 } */
@@ -192,6 +196,56 @@ header{
   border-bottom: 1px solid rgba(0,0,0,.1);
   padding-bottom: 3%;
 }
+
+.work-history{
+  margin-bottom: 3%;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 3%;
+}
+
+.work-heading p{
+  font-size: 1.25em;
+}
+
+.timeline a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Tech stack start */
+
+.circle-overlay {
+  font-size: 16px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.circle-overlay__inner {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.node-icon--faded {
+  opacity: 0.5;
+}
+
+.legend-size circle {
+  fill: rgb(31, 119, 180);
+}
+
+circle{
+  fill: white;
+  stroke: rgba(0,0,0,.1);
+  stroke-width: 0.5;
+}
+
+/* Tech stack end */
 
 /* Work history CSS start */
 
