@@ -1,7 +1,7 @@
 <p align="center">
   <samp>
     <a href="https://ibrahimtareq.com">me</a> .
-    <a href="https://ibrahimtareq.com/posts">projects</a> .
+    <a href="https://ibrahimtareq.com/#side-quests">projects</a> .
     <a href="https://au.linkedin.com/in/ibrahim-tareq-b19915126">linkedin</a> .
     <a href="https://medium.com/@ibrahimtareq">blog</a>
   </samp>
